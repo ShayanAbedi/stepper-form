@@ -10,6 +10,10 @@ form {
   margin: 0 auto;
   padding: 50px;
 }
+input {
+  width: 30%;
+  height: 1.5rem;
+}
 i {
   margin-right: 10px;
 }
@@ -20,4 +24,21 @@ h1 {
   border: 1px solid #9f5eb590;
   width: 50%;
   margin: 0 auto;
+}
+.next {
+  background-color: rgb(8, 158, 66);
+  color: white;
+  padding: 8px;
+  border-radius: 5%;
+  border-style: none;
+}
+.back {
+  background-color: rgb(0, 151, 174);
+  color: white;
+  padding: 8px;
+  border-radius: 5%;
+  border-style: none;
+}
+.new-form {
+  padding: 18px;
 }

@@ -7,6 +7,7 @@ const form3 = document.querySelector(".step3");
 // select Back buttons
 const backBtn2 = document.querySelector(".back-btn-2");
 const backBtn3 = document.querySelector(".back-btn-3");
+const newForm = document.querySelector(".new-form");
 
 // select check mark icons
 const check1 = document.querySelector(".check-1");
@@ -16,6 +17,7 @@ const uncheck2 = document.querySelector(".uncheck-2");
 const check3 = document.querySelector(".check-3");
 const uncheck3 = document.querySelector(".uncheck-3");
 
+const submittedContainer = document.querySelector(".submitted-container");
 const submittedMsg = document.querySelector(".submitted-msg");
 const submittedData = document.querySelector(".submitted-data");
 
@@ -25,8 +27,7 @@ check1.style.display = "none";
 check2.style.display = "none";
 check3.style.display = "none";
 
-submittedMsg.style.display = "none";
-submittedData.style.display = "none";
+submittedContainer.style.display = "none";
 
 const data = {};
 
@@ -57,8 +58,7 @@ form3.addEventListener("submit", (e) => {
   check3.style.display = "";
   uncheck3.style.display = "none";
   formContainer.style.display = "none";
-  submittedMsg.style.display = "";
-  submittedData.style.display = "";
+  submittedContainer.style.display = "";
   submittedData.textContent = `Submitted data {
   username: ${data.name},
   password: ${data.password},
@@ -71,8 +71,21 @@ backBtn2.addEventListener("click", (e) => {
   form2.style.display = "none";
   form1.style.display = "";
 });
+
 backBtn3.addEventListener("click", (e) => {
   e.preventDefault();
   form3.style.display = "none";
   form2.style.display = "";
+});
+
+newForm.addEventListener("click", (e) => {
+  e.preventDefault();
+  form1.reset();
+  form2.reset();
+  form3.reset();
+  formContainer.style.display = "";
+  submittedContainer.style.display = "none";
+  form1.style.display = "";
+  form2.style.display = "none";
+  form3.style.display = "none";
 });
