@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stepper Form 🗒</title>
+  </head>
+  <body>
+    <h1>Stepper Form 🗒</h1>
+    <div class="form-container">
+      <h3>
+        <i class="check-1 fas fa-check-circle"></i
+        ><i class="uncheck-1 far fa-check-circle"></i>Step1
+      </h3>
+      <form class="step1">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+        <button class="next-btn-1" type="submit">Continue</button>
+      </form>
+
+      <h3>
+        <i class="check-2 fas fa-check-circle"></i
+        ><i class="uncheck-2 far fa-check-circle"></i>Step2
+      </h3>
+      <form class="step2">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <button class="back-btn-2" type="button">Back</button>
+        <button class="next-btn-2" type="submit">Continue</button>
+      </form>
+
+      <h3>
+        <i class="check-3 fas fa-check-circle"></i
+        ><i class="uncheck-3 far fa-check-circle"></i>Step3
+      </h3>
+      <form class="step3">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <button class="back-btn-3" type="button">Back</button>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <h1 class="submitted-msg">Form submitted successfully! ✅</h1>
+    <h3 class="submitted-data"></h3>
+    <script src="app.js"></script>
+  </body>
+</html>
